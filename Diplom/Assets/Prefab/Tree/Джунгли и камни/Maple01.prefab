@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3615355490991508969}
   - component: {fileID: 397312097010156108}
   - component: {fileID: 2479089168069785222}
-  - component: {fileID: -3148695003518647628}
+  - component: {fileID: -866210350383870035}
   m_Layer: 0
   m_Name: Maple01
   m_TagString: Untagged
@@ -86,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-3148695003518647628
-BoxCollider:
+--- !u!136 &-866210350383870035
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,6 +96,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 14.100172, y: 18.031525, z: 9.511291}
+  m_Radius: 7.050086
+  m_Height: 18.031525
+  m_Direction: 1
   m_Center: {x: -0.16505909, y: 8.822662, z: -0.548995}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1425525719394520038}
   - component: {fileID: 2623249491410453571}
   - component: {fileID: 253134834299203721}
-  - component: {fileID: 7684656362966545538}
+  - component: {fileID: 5070554310877675859}
   m_Layer: 0
   m_Name: Oak03
   m_TagString: Untagged
@@ -86,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7684656362966545538
-BoxCollider:
+--- !u!136 &5070554310877675859
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,6 +96,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8.621535, y: 14.526318, z: 8.053186}
+  m_Radius: 4.3107677
+  m_Height: 14.526318
+  m_Direction: 1
   m_Center: {x: 0.11083317, y: 7.1482935, z: -0.09106898}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 791996472014871184}
   - component: {fileID: 4418707490468795701}
   - component: {fileID: 1924884516603748863}
-  - component: {fileID: -2682270663102709430}
+  - component: {fileID: 7061645853694337838}
   m_Layer: 0
   m_Name: Magnolia04
   m_TagString: Untagged
@@ -86,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-2682270663102709430
-BoxCollider:
+--- !u!136 &7061645853694337838
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,6 +96,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 16.362396, y: 18.85759, z: 11.104526}
+  m_Radius: 8.181198
+  m_Height: 18.85759
+  m_Direction: 1
   m_Center: {x: -0.68894124, y: 9.248814, z: 0.35750484}

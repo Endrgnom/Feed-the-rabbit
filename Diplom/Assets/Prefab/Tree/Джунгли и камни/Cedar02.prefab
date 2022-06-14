@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 104078912725571900}
   - component: {fileID: 3953624656259503769}
   - component: {fileID: 1241568412266799699}
-  - component: {fileID: -2151456092460214649}
+  - component: {fileID: -6292203113471266524}
   m_Layer: 0
   m_Name: Cedar02
   m_TagString: Untagged
@@ -86,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-2151456092460214649
-BoxCollider:
+--- !u!136 &-6292203113471266524
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,6 +96,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.0679626, y: 16.268606, z: 4.154907}
+  m_Radius: 3.0339813
+  m_Height: 16.268606
+  m_Direction: 1
   m_Center: {x: 0.2977271, y: 8.088086, z: -0.93912584}
