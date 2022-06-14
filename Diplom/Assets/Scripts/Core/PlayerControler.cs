@@ -7,7 +7,7 @@ public class PlayerControler : MonoBehaviour
 {
     public Transform CameraFollow;
   [SerializeField] PlayerInput _input;
-    // public HUD HUD;
+    public HUD HUD;
 
     // private Animator _animator;
 
@@ -81,13 +81,29 @@ public class PlayerControler : MonoBehaviour
                                        _playerMoveInput.z * _movementMultiplier * _rigibody.mass));
     }
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+
+    private IInventoryItem mItemToPicup = null;
+    private void OnTriggerEnter(Collider other) 
     {
-        IInventoryItem item = hit.collider.GetComponent<IInventoryItem>();
+        IInventoryItem item = other.GetComponent<IInventoryItem>();
         if (item != null)
         {
+            mItemToPicup = item;
             inventory.AddItem(item);
+            item.OnPickup();
+            HUD.OpenMessagePanel("");
         }
-    }  
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        IInventoryItem item = other.GetComponent<IInventoryItem>();
+        if (item != null)
+        {
+            HUD.CloseMessagePanel();
+            mItemToPicup = null;
+        }
+    }
+
 
 }

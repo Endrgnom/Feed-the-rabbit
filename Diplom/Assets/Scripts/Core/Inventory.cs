@@ -29,4 +29,22 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+    public void RemoveItem(IInventoryItem item)
+    {
+        if(mItems.Count < SLOTS)
+        {
+            Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
+            if(collider.enabled)
+            {
+                collider.enabled = true;
+                mItems.Remove(item);
+                item.OnPickup();
+
+                if(ItemAdded == null)
+                {
+                    ItemAdded(this,new InventoryEventArgs(item));
+                }
+            }
+        }
+    }
 }
